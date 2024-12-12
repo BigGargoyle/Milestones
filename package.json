@@ -3,6 +3,9 @@
   "displayName": "Milestones",
   "description": "Extension enables creation of list of milestones and is able to check if they are done in time.",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BigGargoyle/Milestones"},
   "engines": {
     "vscode": "^1.95.0"
   },
