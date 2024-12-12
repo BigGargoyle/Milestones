@@ -1,71 +1,26 @@
 # Milestones
 
-This is the README for your extension "milestones". After writing up a brief description, we recommend including the following sections.
+
+Milestones is a Visual Studio Code extension that helps you keep track of your project's progress by allowing you to set milestones and track your progress towards them.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Milestone is a feature that allows you to set a goal for your project and track your progress towards it. You can set a milestone by clicking on the menu icon in the Milestone TreeView bar and then clicking on the "Add Milestone" button. You can then set a name for the milestone and a due date.
 
-For example if there is an image subfolder under your extension project workspace:
+When you have set a milestone, you can change the due date by clicking on the calendar icon next to the milestone name. You can also mark the milestone as completed by clicking on the checkmark icon next to the milestone name. You can also delete the milestone by clicking on the remove icon next to the milestone name.
 
-\!\[feature X\]\(images/feature-x.png\)
+You can modify the milestones state also by writing comments in the code. You can write a comment in the code that contains the keyword "MILESTONE" followed by the name of the milestone.
+That means that there is a place where you are working on the milestone. If you click on the milestone in the Milestone TreeView bar, your cursor will be moved to the place where you wrote the comment. You can also mark the milestone as completed by writing a comment that contains the keyword "MILESTONE" followed by the name of the milestone and the word "DONE".
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+```javascript
+// MILESTONE My_milestone
+// MILESTONE My_another_milestone_that_is_done DONE
+```
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+<!-- ## Known Issues -->
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release of Milestones
