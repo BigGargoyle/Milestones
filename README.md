@@ -1,4 +1,4 @@
-# milestones README
+# Milestones
 
 This is the README for your extension "milestones". After writing up a brief description, we recommend including the following sections.
 
