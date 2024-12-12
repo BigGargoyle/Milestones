@@ -301,7 +301,7 @@ export async function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(changeDateDisposable);
 
     const markAsDoneDisposable = vscode.commands.registerCommand('milestones.markDone', async (item: MilestoneTreeItem) => {
-        item.milestone.state = item.milestone.state == MilestoneState.DONE ? MilestoneState.NOT_STARTED : MilestoneState.DONE;
+        item.milestone.state = item.milestone.state === MilestoneState.DONE ? MilestoneState.NOT_STARTED : MilestoneState.DONE;
         context.globalState.update(key, JSON.stringify(milestones));
         milestoneTreeDataProvider.refresh();
     });
